@@ -1,5 +1,7 @@
 <template>
     <div id="app">
+        <h1>:: SANDRA ::</h1>
+        <h2>TO DO LIST</h2>
         <div id="nav">
             <router-link class="link" to="/all">全部</router-link> |
             <router-link class="link" to="/active">未完成</router-link> |
@@ -37,6 +39,7 @@
 
 
 <style lang="scss">
+    @import "~@/style/mixin.scss";
     @import "~@/style/reset.scss";
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -44,8 +47,18 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-        background-color: #77a88d;
+        background-color: #0f4b81;
         height: 100vh;
+        h1 {
+            color: white;
+            font-size: 42px;
+            padding-top: 100px;
+        }
+        h2 {
+            color: yellow;
+            font-size: 32px;
+            padding-top: 10px;
+        }
         #nav {
             padding: 80px;
             a {

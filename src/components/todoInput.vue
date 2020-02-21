@@ -1,5 +1,6 @@
 <template>
     <div class="todo-input">
+
         <input type="text" placeholder="請輸入代辦事項" v-model.trim="todo" @keyup.enter="submitHandler" v-focus>
     </div>
 </template>
